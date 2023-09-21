@@ -23,5 +23,10 @@ public class FindUniqueElement {
 			System.out.println(out);
 		}
 		System.out.println("Final Result "+out);
+		
+		// Ascii Value Print Logic
+		char var = '0';
+		int ans = var;
+		System.out.println(ans);
 	}
 }

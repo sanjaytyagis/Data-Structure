@@ -1,5 +1,6 @@
 package ArraysEasy;
 import java.util.*;
+// If Left Rotation of string is required x moves then Right Rotation will be (n-x) moves where n is length of string
 // d:- no of rotation, n:- array element
 // left shift (i+(n-d))%n 
 // right shift (i+(n-1-d))%n

@@ -9,7 +9,17 @@ public class ParallelSort {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] nums = new int[]{673,982,82,749,102,4873,6241,9572,511};
+		//char []a = new char[5];
+		//System.out.println(a[0]);
+		
+		StringBuilder sb =  new StringBuilder("Sanjay Good Boy");
+		//System.out.println(sb.reverse().toString());
+		
+		String a ="abc";
+		String b = "abcd";
+		System.out.println(b.compareTo(a));
+		
+		String[] nums = {"673","982","82","149","102","4873","6241","9572","511"};
         //Sorting array
         Arrays.parallelSort(nums);
         //using stream to print values

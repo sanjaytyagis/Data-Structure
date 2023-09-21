@@ -23,7 +23,7 @@ class Name implements Comparator<Person>{
 		@Override
 		public int compare(Person person1, Person person2){
 			
-			return person1.name.compareTo(person2.name);
+			return person2.name.compareTo(person1.name);
 		}
 		 
 }
@@ -32,12 +32,16 @@ class RollNo implements Comparator<Person>{
 
 	public int compare(Person person1, Person person2) {
 			
-		if(person1.rollNo > person2.rollNo)
+		 return person1.rollNo - person2.rollNo; // Ascending Order
+		
+		//return person2.rollNo - person1.rollNo; // Descending Order 
+		
+		/*if(person1.rollNo > person2.rollNo)
 			return 1;
-		else if(person1.rollNo < person2.rollNo )
+		else if(person1.rollNo < person2.rollNo)
 			return -1;
 		else
-			return 0; 
+			return 0; */
 	}
 			 
 }
@@ -54,8 +58,8 @@ public class ComparatorPractice{
 			personList.add(new Person(2,"Uanjay",46.98));
 			personList.add(new Person(4,"Sanjay",47.98));
 	
-			Collections.sort(personList, new RollNo());
-			//Collections.sort(personList, new Name());
+			//Collections.sort(personList, new RollNo());
+			Collections.sort(personList, new Name());
 	
 				for(Person results : personList) {
 					System.out.println(results.rollNo+" "+results.name+" "+results.fees);
