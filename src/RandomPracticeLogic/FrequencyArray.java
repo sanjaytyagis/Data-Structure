@@ -24,7 +24,7 @@ public class FrequencyArray {
         
 		List<Integer> ob = new ArrayList();
 		ob.add(3);ob.add(2);ob.add(1);
-		ob.sort(null);
+		//ob.sort(null);
 			System.out.println(ob.toString());
 			
 		String str = "GeeksForGeeks";

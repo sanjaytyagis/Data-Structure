@@ -68,7 +68,7 @@ public class SortCharactersByFrequency {
 		            public int compare(Pair obj1,Pair obj2){
 
 		  // It subtract the values and check if values greater than 0 or equal and less than 0 and take the action accordingly
-		            	//return obj2.freq - obj1.freq;
+		            	//return obj2.freq - obj1.freq; // Descending Order
 		            	
 		            	if (obj1.freq== obj2.freq)
 		                    return 0;

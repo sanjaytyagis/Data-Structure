@@ -36,5 +36,6 @@ public class Search2DMatrix {
 
         boolean result = searchMatrix(matrix, 8);
         System.out.println(result ? "true" : "false");
+       
 	}
 }
