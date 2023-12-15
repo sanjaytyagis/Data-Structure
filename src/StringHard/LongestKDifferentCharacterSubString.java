@@ -16,7 +16,7 @@ public class LongestKDifferentCharacterSubString {
 
             hm.put(ch, hm.getOrDefault(ch,0)+1); 
            
-           // decrease the frequency until it gets 0 and once it's zero remove frpom Map
+           // decrease the frequency until it gets 0 and once it's zero remove from Map
             if (hm.size()>k){ 
                 while(hm.size()>k){
                 
@@ -30,12 +30,11 @@ public class LongestKDifferentCharacterSubString {
                     i++;
                 }
             }
-         // Substring size qual to K that means map size equal to K
+         // Substring size equal to K that means map size equal to K
             if(hm.size() == k){ 
                 int currentAns = j-i+1;
                 answer = Math.max(answer,currentAns);
             }
-
             j++; // increase window size and look for next window where sum = target
         }
         return answer;

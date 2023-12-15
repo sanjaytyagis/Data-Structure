@@ -51,7 +51,6 @@ public class BalancedParenthesis {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String s = "()";
-		
 		boolean result = isValid(s);
         System.out.println(result);
 	}
