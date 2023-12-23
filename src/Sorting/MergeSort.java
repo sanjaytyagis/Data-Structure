@@ -37,7 +37,8 @@ public class MergeSort {
 
         // transfering all elements from temporary to arr //
         for (int i = low; i <= high; i++) {
-            arr[i] = temp.get(i - low); // why i-low
+        	// To maintain actual low and high indexing to the temp array so that temp start from 0 and increase every time by 1
+        	arr[i] = temp.get(i - low); 
         }
     }
 	
@@ -45,7 +46,7 @@ public class MergeSort {
 		
         if (low >= high)
         	return;
-        int mid = (low + high) / 2 ;
+        int mid = (low + high) / 2 ;// Base condition thought when one element would be left in last
         mergeSort(arr, low, mid);  // left half
         mergeSort(arr, mid + 1, high); // right half
         merge(arr, low, mid, high);  // merging sorted halves
