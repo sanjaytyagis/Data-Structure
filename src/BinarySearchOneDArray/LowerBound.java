@@ -13,7 +13,7 @@ public class LowerBound {
        int low = 0, high = n - 1;
         int ans = n;
 
-        while (low >= high) {
+        while (low <= high) {
         	
             int mid = low + (high-low) / 2; // to avoid overflow condition as low+high can exceed the integer range
       
@@ -32,8 +32,8 @@ public class LowerBound {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		// If elemets are same then get the first same element that is greater than x
-		int[] arr = {1,2,2,3,3,5};
-        int n = 6, x = 2;
+		int[] arr = {1,2,2,3};
+        int n = 4, x = 2;
         int ind = lowerBound(arr, n, x);
         System.out.println("The lower bound is the index: " + ind);
 	}

@@ -55,7 +55,7 @@ public class StringSubSequence {
 	
 	public static void main(String[] args) {
 		// TODO Auto generated method stub
-		int[] arr = {2,3,6,7}; // input = 1,2,3,1,1,1
+		int[] arr = {1,2,3,4}; // input = 1,2,3,1,1,1
 		List<Integer> seq = new ArrayList<>();
 		
 	    printSubsequences(0, arr, seq);

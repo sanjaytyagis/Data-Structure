@@ -57,5 +57,4 @@ public class BinarySearchTreeUsingRecursion {
         System.out.println("Traversing tree in order");
         BinarySearchTreeUsingRecursion.traverseInOrder(root);
 	}
-
 }
