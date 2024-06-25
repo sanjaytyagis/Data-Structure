@@ -19,15 +19,15 @@ public class HeightBinaryTree {
         if(root == null)
         	return 0; 
         
-        int lh = height(root.left); 
-        int rh = height(root.right); 
+        int lh = 1+ height(root.left); 
+        int rh = 1+ height(root.right); 
         
-        return 1 + Math.max(lh, rh); 
+        return Math.max(lh, rh); 
     }
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		 int arr[] = {1,2,3};
+		 int arr[] = {1,2};
 	        Node root = CreateBinaryTreeIteratively.insertLevelOrder(arr, 0);
 	        System.out.println(height(root));
 	}

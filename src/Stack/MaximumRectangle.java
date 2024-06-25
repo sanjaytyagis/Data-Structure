@@ -14,7 +14,8 @@ Explanation: The maximal rectangle is shown in the above picture.
 public class MaximumRectangle {
 
 	public int maximalRectangle(char[][] matrix) {
-        if(matrix.length == 0)  return 0;
+        if(matrix.length == 0) 
+        	return 0;
         int maxArea = 0;
         int row = matrix.length;
         int col = matrix[0].length;

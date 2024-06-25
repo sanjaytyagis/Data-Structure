@@ -42,6 +42,7 @@ public class StringSubSequence {
 			
 			return;
 		}
+		
 		     seq.add(arr[index]);
 			printSubsequences(index + 1, arr, seq); 
 			

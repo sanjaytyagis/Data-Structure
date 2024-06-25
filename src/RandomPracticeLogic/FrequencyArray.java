@@ -3,7 +3,7 @@ package RandomPracticeLogic;
 import java.util.*;
 
 public class FrequencyArray {
-
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
@@ -31,12 +31,15 @@ public class FrequencyArray {
 		str = str.toLowerCase();
 		char[] array = str.toCharArray();
 
-		TreeMap<Character,Integer> freqCount = new TreeMap<Character,Integer>();
-
+		LinkedHashMap<Character,Integer> freqCount = new LinkedHashMap<Character,Integer>();
+		
 		for (char key : array) {
 			freqCount.put(key, freqCount.getOrDefault(key, 0)+1); // count Frequency
 		}
-
+		for (char key : freqCount.keySet()) {
+			System.out.println(key); // count Frequency
+		}
+		System.out.println(freqCount.keySet().iterator().next());
 		//System.out.println(freqCount.keySet() + " " + freqCount.values());
 	}
 

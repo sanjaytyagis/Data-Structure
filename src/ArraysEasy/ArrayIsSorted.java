@@ -22,6 +22,7 @@ public class ArrayIsSorted {
 		// TODO Auto-generated method stub
 
 		int input[] = {1,4,2,5,3};
+		System.out.println(input.length);
 		int result = ArrayIsSorted.isSorted(input);
 		System.out.println(result);
 	}

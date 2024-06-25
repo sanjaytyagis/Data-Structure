@@ -28,5 +28,7 @@ public class FindUniqueElement {
 		char var = '0';
 		int ans = var;
 		System.out.println(ans);
+		
+		
 	}
 }

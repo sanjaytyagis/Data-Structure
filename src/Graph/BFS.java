@@ -21,6 +21,8 @@ public class BFS {
 		        vis[0] = true;
 
 		        while (!q.isEmpty()) {
+		        	
+		        	// visited node ko queue mai dalna hai
 		            Integer node = q.poll();
 		            bfs.add(node);
 

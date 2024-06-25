@@ -1,6 +1,6 @@
 package DynamicProgrammingIncreasingSubSequence;
 import java.util.*;
-/* Tabulation O(N) approach helped in p[rinting LIS as well 
+/* Tabulation O(N) approach helped in printing LIS as well 
  
  static int longestIncreasingSubsequence(int arr[], int n){
     

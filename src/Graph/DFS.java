@@ -5,7 +5,7 @@ public class DFS {
  public static void dfs(int node, boolean vis[], ArrayList<ArrayList<Integer>> adj,  ArrayList<Integer> ls) {
 		        
 		        //marking current node as visited
-		        vis[node] = true;
+		       vis[node] = true;
 		        ls.add(node);
 		        
 		        //getting neighbour nodes
@@ -19,7 +19,7 @@ public class DFS {
  public ArrayList<Integer> dfsOfGraph(int V, ArrayList<ArrayList<Integer>> adj) {
 		        //boolean array to keep track of visited vertices
 		        boolean vis[] = new boolean[V];
-		        vis[0] = true; 
+		        //vis[0] = true; 
 		        ArrayList<Integer> ls = new ArrayList<>();
 		        dfs(0, vis, adj, ls); 
 		        return ls; 
@@ -28,9 +28,9 @@ public class DFS {
 	public static void main(String[] args) {
 		ArrayList < ArrayList < Integer >> adj = new ArrayList < > ();
 		
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 5; i++) 
             adj.add(new ArrayList < > ());
-        }
+        
         adj.get(0).add(2);
         adj.get(2).add(0);
         adj.get(0).add(1);

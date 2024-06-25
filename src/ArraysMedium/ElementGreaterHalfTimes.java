@@ -15,14 +15,15 @@ public class ElementGreaterHalfTimes {
             else
                 count--;
         }
+        System.out.println(count);
         return element;
     }
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int input[] = {2,2,0,0,1};
-		
+		int input[] = {3,2,3};
+		System.out.println(majorityElement(input));
 		int n = input.length;
 		//int result = Sort012.sortArray(input,n);
 		//System.out.println(result);

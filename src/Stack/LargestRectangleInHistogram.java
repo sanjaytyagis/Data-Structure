@@ -6,6 +6,7 @@ import java.util.*;
    Approach 2 -> Using Stack find smallest Prefix and Suffix for every element
    
    Approach3 -> Find left and right Half in one loop 
+   
    public static int largestRectangleArea(int[] heights) {
         int n = heights.length;
         Stack < Integer > st = new Stack < > ();
@@ -60,6 +61,7 @@ public class LargestRectangleInHistogram {
         for (int i = 0; i <= n; i++) {
         	
         	// This loop will tell you your left and right small element for each iteration
+        	// we will push only increasing height in stack not decreasing
             while (!st.empty() && (i == n || heights[st.peek()] >= heights[i])) {
             	
                 int height = heights[st.peek()];

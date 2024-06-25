@@ -2,7 +2,12 @@ package Queue;
 import java.util.*;
 /* Nice Explanation on youtube https://www.youtube.com/watch?v=akFRa58Svug
 Main when element is found in cache then remove it and add in the list at tail of the linkedList
+
+Algo
+-> agr element hai list mai to list ka first element remove krdo and add new element at the end
+-> agr hasi to remove that element and list kai end mai add krdo phir
 */
+
 class Node {
     Node prev, next;
     int key, value;

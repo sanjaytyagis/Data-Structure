@@ -32,7 +32,7 @@ public class PriorityQueueTest {
 				 */
 		
 		
-		PriorityQueue<Integer> ascending  = new PriorityQueue<Integer>(); // Follows Min-Heap;
+		PriorityQueue<Integer> ascending  = new PriorityQueue<Integer>((Integer a, Integer b) -> {return b - a;}); // Follows Min-Heap;
 		ascending.add(10);
 		ascending.add(20);
 		ascending.add(15);

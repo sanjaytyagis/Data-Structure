@@ -1,33 +1,23 @@
 package Stack;
 import  java.util.*;
 /*
+ * Logic: If push and pop nothing is happening on coming character then parenthesis not balanced
+ 
   public boolean isValid(String s) {
 
-// below tests cases are being failed for my logic
-        if(s.equals("(])") || s.equals("([}}])") || s.equals("[](])"))
-        return false;
-        
         Stack<Character> stack = new Stack();
 
-        for(int i=0; i< s.length();i++){
-            char ele = s.charAt(i);
-
-            if((stack.isEmpty()) && (ele == ')' || ele == ']' || ele == '}'))
+        for(char c : s.toCharArray()){
+            if (c == '(' || c == '{' || c == '[') 
+                stack.push(c); 
+            else if ((!stack.isEmpty()) && (stack.peek() == '(' && c==')' || 
+            stack.peek() == '{' && c=='}' || stack.peek() == '[' && c==']'))
+                stack.pop();
+            else 
                 return false;
-
-            if(ele == '(' || ele == '[' || ele == '{')
-                stack.push(ele);
-
-            if((!stack.isEmpty()) && stack.peek() == '(' && ele == ')')
-                stack.pop();
-            if((!stack.isEmpty()) && stack.peek() == '[' && ele == ']')
-                stack.pop();
-            if((!stack.isEmpty()) && stack.peek() == '{' && ele == '}')
-                stack.pop();
-
         }
         return stack.isEmpty();
-    }
+        }
  */
 public class BalancedParenthesis {
 	

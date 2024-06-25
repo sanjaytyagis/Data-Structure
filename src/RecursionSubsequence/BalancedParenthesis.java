@@ -9,6 +9,7 @@ public class BalancedParenthesis {
 		
         if(openN == n && closeN == n){
             ans.add(s);
+            return;
         }
          if(openN<n){//allowed to put close
             backtrack(s+"(",openN+1,closeN,ans,n);
@@ -26,7 +27,7 @@ public class BalancedParenthesis {
     
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		 BalancedParenthesis.generateParenthesis(3);
+		 BalancedParenthesis.generateParenthesis(1);
 		 System.out.println(ans.toString());
 	}
 

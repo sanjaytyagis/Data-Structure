@@ -11,13 +11,14 @@ public class StringPermutation {
 	
 static  List < List < Integer >> ans = new ArrayList < > ();
 
+
 	private static List <List< Integer >> recurPermute(int index, int[] nums, List <List< Integer >> ans) {
 		
         if (index == nums.length) {
             // copy the ds to ans
         	
             List < Integer > ds = new ArrayList < > (); // to collect element into the list
-            
+
             for (int i = 0; i < nums.length; i++) 
                 ds.add(nums[i]);
             

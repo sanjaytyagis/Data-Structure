@@ -40,13 +40,12 @@ public class VerticalOrderTraversal {
             
             map.get(x).get(y).offer(node.data); // to enter data to Priority Queue (log(n))
 
-            if (node.left != null) {
+            if (node.left != null) 
                 q.offer(new Tuple(node.left, x - 1, y + 1)); // add data to Tuple
-            }
-            
-            if (node.right != null) {
+               
+            if (node.right != null) 
                 q.offer(new Tuple(node.right, x + 1, y + 1));  // add data to Tuple
-            }
+            
         }
         
         List < List < Integer >> list = new ArrayList < > ();

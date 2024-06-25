@@ -1,5 +1,15 @@
 package Trie;
-
+/*
+    Trie has 0(N) complexity for all the operations and 0(N) for Space Complexity
+    Suppose the trie contains the following words: at, and, an, add
+            root
+             |
+             a
+            /|\
+           t n d // at every level we have different node , not like all element in the array of node
+                \
+                 d
+ */
 import java.util.Arrays;
 
 class Node {
@@ -36,8 +46,6 @@ public class BuildTrie {
 	 BuildTrie() {
 	        root = new Node(); 
 	    }
-
-
 	    //Inserts a word into the trie
 
 	    public static void insert(String word) {
@@ -52,8 +60,6 @@ public class BuildTrie {
 	        }
 	        node.setEnd(); 
 	    }
-
-
 	    //Returns if the word is in the trie
 
 	    public static boolean search(String word) {
@@ -66,10 +72,8 @@ public class BuildTrie {
 	            }
 	            node = node.get(word.charAt(i)); 
 	        }
-	        if(node.isEnd()) {
-	            return true; 
-	        }
-	        return false; 
+	        
+	        return node.isEnd(); 
 	    }
 
 	    

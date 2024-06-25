@@ -17,16 +17,19 @@ public class CreateBinaryTreeIteratively {
 	public static Node insertLevelOrder(int[] arr, int i)
     {
           Node root = null;
+          
         // Base case for recursion
-        if (i < arr.length-1/2) { // if i greater than length then it won't come in if and return the node that created.
-            root = new Node(arr[i]);
+        if (i > arr.length-1)  
+        	return root;
+        else
+        	 root = new Node(arr[i]);
  
             // insert left child
             root.left = insertLevelOrder(arr, 2 * i + 1);
  
             // insert right child
             root.right = insertLevelOrder(arr, 2 * i + 2);
-        }
+        
         return root;
     }
 	

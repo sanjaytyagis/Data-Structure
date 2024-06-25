@@ -49,9 +49,9 @@ public class NMeetingRoom {
         
         System.out.println("The order in which the meetings will be performed is ");
         
-        for(int i = 0;i<answer.size(); i++) {
+        for(int i = 0;i<answer.size(); i++) 
             System.out.print(answer.get(i) + " ");
-        }
+
     }
 	
 	public static void main(String[] args) {
